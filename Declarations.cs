@@ -48,7 +48,7 @@ namespace SC1
         }
         public void Client_Received()
         {
-            Byte[] WelB = Encoding.Default.GetBytes("hldac");
+            Byte[] WelB = Encoding.Default.GetBytes("hldac;Mogolin :)");
             Cliente.Send(WelB);
 
             int Recv = 0;
