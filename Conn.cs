@@ -54,9 +54,9 @@ namespace SC1
                     {
                         tmp = new UserList_(Master_Socket.Accept(), "");
                         Declarations.UserList.Add(tmp);
-                        Declarations.Last_Client += 1;
+                        
                         Declarations.UserList[Declarations.Last_Client].Init();
-
+                        Declarations.Last_Client += 1;
                         Console.WriteLine("Usuario aceptado!");
                         Declarations.Users++;
                     }
