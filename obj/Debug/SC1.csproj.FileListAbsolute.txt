@@ -1,0 +1,5 @@
+C:\Users\Kyubolas\Documents\Visual Studio 2017\Projects\ServerC1\SC1\bin\Debug\SC1.exe
+C:\Users\Kyubolas\Documents\Visual Studio 2017\Projects\ServerC1\SC1\bin\Debug\SC1.pdb
+C:\Users\Kyubolas\Documents\Visual Studio 2017\Projects\ServerC1\SC1\obj\Debug\SC1.csprojResolveAssemblyReference.cache
+C:\Users\Kyubolas\Documents\Visual Studio 2017\Projects\ServerC1\SC1\obj\Debug\SC1.exe
+C:\Users\Kyubolas\Documents\Visual Studio 2017\Projects\ServerC1\SC1\obj\Debug\SC1.pdb
