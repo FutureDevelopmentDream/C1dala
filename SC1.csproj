@@ -43,7 +43,6 @@
     <Compile Include="Conn.cs" />
     <Compile Include="Declarations.cs" />
     <Compile Include="Handle1.cs" />
-    <Compile Include="HandleData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

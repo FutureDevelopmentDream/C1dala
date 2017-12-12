@@ -8,7 +8,7 @@ namespace SC1
 {
     public class Handle1
     {
-        public static char Sep = 'ç';
+        public static char Sep = ';';
         public static void Handle_Archive(String dato, UserList_ User_, Byte[] Bytes_)
         {
             if (ReadField_Num(dato, Sep) < 2)
@@ -28,7 +28,8 @@ namespace SC1
 
             switch (Datos)
             {
-                case "LOGIN":
+                case "mensa":
+                    Console.WriteLine("Mensaje: " + Datos);
                     break;
                 case "MSGGL":
                     break;

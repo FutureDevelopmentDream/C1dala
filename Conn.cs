@@ -20,6 +20,7 @@ namespace SC1
             Master_Socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPAddress[] IPs = Dns.GetHostAddresses("networkhit.securitytactics.com");
             Master_IPEnd = new IPEndPoint(IPs[0], 7666);
+            //Master_IPEnd = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 7666);
             Console.WriteLine("Socket Starting... {" + Master_IPEnd.Address.ToString() + ":" + Master_IPEnd.Port.ToString() + "}");
             Master_Socket.Bind(Master_IPEnd);
             Console.WriteLine("Socket Bind...");
@@ -55,7 +56,7 @@ namespace SC1
                         tmp = new UserList_(Master_Socket.Accept(), "");
                         Declarations.UserList.Add(tmp);
                         
-                        Declarations.UserList[Declarations.Last_Client].Init();
+                        tmp.Init();
                         Declarations.Last_Client += 1;
                         Console.WriteLine("Usuario aceptado!");
                         Declarations.Users++;

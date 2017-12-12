@@ -46,10 +46,14 @@ namespace SC1
         {
             Receiv.Start();
         }
+        public void Send (String msg)
+        {
+            Byte[] WelB = Encoding.UTF32.GetBytes(msg);
+            Cliente.Send(WelB);
+        }
         public void Client_Received()
         {
-            Byte[] WelB = Encoding.Unicode.GetBytes("hldac;Mogolin :)");
-            Cliente.Send(WelB);
+            Send("msg;hola negro");
 
             int Recv = 0;
             Byte[] data;
@@ -70,7 +74,7 @@ namespace SC1
                         //stringData = Encoding.ASCII.GetString(data, 0, Recv);
                         //String tmp = stringData.Replace('\n', ' ');
 
-                        stringData = Encoding.Unicode.GetString(Dato, 0, Recv);// Encoding.UTF32.GetString(data, 0, Recv);
+                        stringData = Encoding.UTF32.GetString(Dato, 0, Recv);// Encoding.UTF32.GetString(data, 0, Recv);
 
                         Handle1.Handle_Data(stringData, this, Dato);
                         Console.WriteLine("[" + Cliente.Handle.ToString() + "] Recivido: " + stringData);
